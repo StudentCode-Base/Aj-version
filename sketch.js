@@ -71,8 +71,9 @@ function setup() {
 function draw() {
   //trex.debug = true;
   background("lightblue");
-  text("version by Aj" + score, 500,50);
-  text("version by Aj",600,40)
+  text("version by AJ",500,35)
+  text("score:" + score, 500,50);
+
   if (gameState===PLAY){
     score = score + Math.round(getFrameRate()/60);
     ground.velocityX = -(6 + 3*score/100);
